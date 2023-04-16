@@ -56,7 +56,7 @@ public class P0003 {
         return len;
     }
 
-    // chatgtp1 思想：Set是一个窗口，如果出现重复元素，清空窗口所有元素，再往前走
+    // chatgtp1 思想：Set是一个窗口，如果出现重复元素，清空窗口中那个重复元素及其之前的所有元素，再往前走
     public static int lengthOfLongestSubstring1(String s) {
         int n = s.length();
         Set set = new HashSet<>();
@@ -87,7 +87,6 @@ public class P0003 {
     }
 
     /* 别人的答案
-
     对于这道题，我们可以使用数组来实现。具体原理如下：
     定义一个长度为128的整型数组，用来存储每个字符出现的位置。
     定义两个指针i和j，分别表示子串的起始位置和结束位置。
