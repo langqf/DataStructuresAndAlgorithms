@@ -6,7 +6,7 @@ package lang.leetcode.bitwise.operation;
 public class OfferInterestingProblem {
     public static void main(String[] args) {
 
-        System.out.println(sumNums(5));
+        System.out.println(sumNums(10));
 
     }
 
