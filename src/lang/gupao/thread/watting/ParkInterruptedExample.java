@@ -5,7 +5,7 @@ import java.util.concurrent.locks.LockSupport;
 // park()
 // 被中断时不会抛异常，会直接返回,并且不会清除中断标志
 // 但是Thread.interrupted()会返回当前线程的中断状态，并且会清除中断状态（即重置为false）
-// 判定中断状态应该用
+// 判定中断状态应该用Thread.isInterrupted()
 public class ParkInterruptedExample {
     public static void main(String[] args) {
         Thread t1 = new Thread((
